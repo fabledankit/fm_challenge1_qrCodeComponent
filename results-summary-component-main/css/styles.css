@@ -1,0 +1,254 @@
+:root {
+  --white: #ffffff;
+  --pale-blue: #ebf1ff;
+  --light-lavender: #c8c7ff;
+  --Dark-gray-blue: #303b5a;
+
+  /* --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0); */
+
+  --light-red: #ff5757;
+  --orangey-yellow: #ffb01f;
+  --green-teal: #00bd91;
+  --cobalt-blue: hsl(234, 85%, 45%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk";
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 5em auto;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.result-card {
+  width: 36.8em;
+  height: 51.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  background: radial-gradient(50% 50% at 50% 50%, #2e2be9 0%, #7857ff 100%);
+  border-radius: 30px;
+
+  padding: 0;
+  margin: 0;
+}
+
+.result-card h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: var(--light-lavender);
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+.ellipse-component {
+  width: 20em;
+  height: 20em;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #4e21c8 0%, rgba(36, 33, 200, 0) 100%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+
+.ellipse-component h2 {
+  color: var(--white);
+  font-size: 7rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.result-card h3 {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 3rem;
+  margin-top: 1.2em;
+  margin-bottom: 0;
+}
+
+.result-card P {
+  color: var(--light-lavender);
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  width: 255px;
+  margin-top: 1em;
+}
+
+.summary-card {
+  width: 36.8em;
+  height: 51.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  box-shadow: 1.5em 0.9em 3em rgba(160, 160, 160, 0.25);
+}
+
+.summary-card h1 {
+  color: var(--Dark-gray-blue);
+  width: 78%;
+  font-size: 2.2rem;
+  margin-top: 1.5em;
+  font-weight: 700;
+  margin-bottom: 1.8em;
+}
+
+.label {
+  display: flex;
+  width: 74%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.3em;
+  padding: 1.2em;
+}
+
+.label p {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.label p:last-child {
+  color: gray;
+}
+
+.label:not(:last-child) {
+  margin: 0 0 2em 0;
+}
+
+.label p .marks {
+  color: var(--Dark-gray-blue);
+}
+
+.reaction {
+  background: hsla(0, 100%, 67%, 0.12);
+}
+
+.reaction p {
+  color: var(--light-red);
+}
+
+.memory {
+  background: hsla(39, 100%, 56%, 0.12);
+}
+
+.memory p {
+  color: var(--orangey-yellow);
+}
+
+.verbal {
+  background: hsla(166, 100%, 37%, 0.12);
+}
+
+.verbal p {
+  color: var(--green-teal);
+}
+
+.visual {
+  background: hsla(234, 85%, 45%, 0.12);
+}
+
+.visual p {
+  color: var(--cobalt-blue);
+}
+
+.cta {
+  width: 80%;
+  text-align: center;
+  background: var(--Dark-gray-blue);
+  padding: 1.2em 0;
+  border-radius: 27px;
+  margin-top: 3em;
+}
+
+.cta a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.cta:hover {
+  background: var(--cobalt-blue);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 60em) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .summary-card {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .result-card {
+    width: 37.5em;
+    height: 35.7em;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .result-card h1 {
+    font-size: 2rem;
+    margin-top: 1.4em;
+  }
+  .ellipse-component {
+    width: 13.7em;
+    height: 13.7em;
+
+    margin-top: 2.6em;
+  }
+
+  .ellipse-component h2 {
+    font-size: 5.1rem;
+  }
+
+  .ellipse-component p,
+  .result-card p {
+    font-size: 1.4rem;
+  }
+
+  .result-card h3 {
+    font-size: 1.8rem;
+  }
+}

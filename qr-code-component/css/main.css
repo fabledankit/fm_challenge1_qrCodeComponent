@@ -10,11 +10,15 @@ body {
 
 .card-component {
   width: 250px;
-  margin: 10em auto;
+  /* margin: 10em auto; */
   border-radius: 2em;
   background: #fff;
   padding: 1.6em;
   box-shadow: 15px 9px 30px rgba(214, 226, 240, 0.25);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card-component img {
